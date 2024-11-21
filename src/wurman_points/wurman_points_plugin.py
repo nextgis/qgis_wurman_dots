@@ -18,7 +18,8 @@ if TYPE_CHECKING:
 class WurmanPointsPlugin:
     def __init__(self, _: QgisInterface):
         self.__provider = None
-        self.__action = None
+        self.__run_action = None
+        self.__about_action = None
 
     def initProcessing(self):
         self.__provider = WurmanPointsAlgorithmProvider()
@@ -27,14 +28,22 @@ class WurmanPointsPlugin:
     def initGui(self):
         self.initProcessing()
 
-        self.__action = QAction(
+        menu_name = self.tr("&Wurman Points")
+
+        self.__run_action = QAction(
             QIcon(":/plugins/wurman_points/icons/wurman_points.png"),
             self.tr("Create Wurman Points"),
             iface.mainWindow(),
         )
-        self.__action.triggered.connect(self.__exec_algorithm)
-        menu_name = self.tr("&Wurman Points")
-        iface.addPluginToVectorMenu(menu_name, self.__action)
+        self.__run_action.triggered.connect(self.__exec_algorithm)
+        iface.addPluginToVectorMenu(menu_name, self.__run_action)
+
+        self.__about_action = QAction(
+            self.tr("About plugin…"),
+            iface.mainWindow(),
+        )
+        self.__about_action.triggered.connect(self.__open_about_dialog)
+        iface.addPluginToVectorMenu(menu_name, self.__about_action)
 
         for action in iface.vectorMenu().actions():
             if action.text() != menu_name:
@@ -53,12 +62,13 @@ class WurmanPointsPlugin:
         plugin_help_menu.addAction(self.__show_help_action)
 
     def unload(self):
-        if self.__action:
-            iface.removePluginVectorMenu(
-                self.tr("&Wurman Points"), self.__action
-            )
-        if self.__provider:
-            QgsApplication.processingRegistry().removeProvider(self.__provider)
+        iface.removePluginVectorMenu(
+            self.tr("&Wurman Points"), self.__run_action
+        )
+        iface.removePluginVectorMenu(
+            self.tr("&Wurman Points"), self.__about_action
+        )
+        QgsApplication.processingRegistry().removeProvider(self.__provider)
 
     def tr(self, string: str, context: str = "") -> str:
         if context == "":
