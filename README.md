@@ -8,7 +8,7 @@ QGIS plugins page: https://plugins.qgis.org/
 
 ![wurman_dots_1](https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_1.png)
 
-##Result
+## Result
 
 ![wurman_dots_2](https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_2.png)
 
