@@ -6,8 +6,6 @@ QGIS plugins page: https://plugins.qgis.org/
 
 ## Set the cell size in meters and choose the grid type
 
-
-
 ## License
 
 This program is licensed under GNU GPL v.2 or any later version.
