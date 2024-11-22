@@ -6,9 +6,9 @@ QGIS plugins page: https://plugins.qgis.org/
 
 ## Set the cell size in meters and choose the grid type
 
-https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_1.png
+![wurman_dots_1](https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_1.png)
 
-https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_2.png
+![wurman_dots_2](https://raw.githubusercontent.com/nextgis/qgis_wurman_dots/refs/heads/main/assets/wurman_dots_2.png)
 
 ## License
 
