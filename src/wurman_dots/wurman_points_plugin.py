@@ -31,7 +31,7 @@ class WurmanPointsPlugin:
         menu_name = self.tr("&Wurman Points")
 
         self.__run_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_points.png"),
+            QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svg"),
             self.tr("Create Wurman Points"),
             iface.mainWindow(),
         )
@@ -49,11 +49,11 @@ class WurmanPointsPlugin:
             if action.text() != menu_name:
                 continue
             action.setIcon(
-                QIcon(":/plugins/wurman_points/icons/wurman_points.png")
+                QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svg")
             )
 
         self.__show_help_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_points.png"),
+            QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svgg"),
             "Wurman Points",
         )
         self.__show_help_action.triggered.connect(self.__open_about_dialog)

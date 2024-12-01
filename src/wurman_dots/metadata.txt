@@ -1,7 +1,7 @@
 [general]
 name=Wurman Points
 version=1.0.0
-icon=icons/wurman_points.png
+icon=icons/wurman_dots_logo.svg
 category=Vector
 
 author=NextGIS

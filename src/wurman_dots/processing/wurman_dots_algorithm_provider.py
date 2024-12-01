@@ -17,4 +17,4 @@ class WurmanPointsAlgorithmProvider(QgsProcessingProvider):
         return self.tr("Wurman Points")
 
     def icon(self) -> QIcon:
-        return QIcon(":/plugins/wurman_points/icons/wurman_points.png")
+        return QIcon(":/plugins/wurman_points/icons/wurman_dots.png")
