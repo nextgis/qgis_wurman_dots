@@ -1,5 +1,5 @@
 [project]
-name = "wurman_points"
+name = "wurman_dots"
 version = "1.0.0"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -9,11 +9,11 @@ license = { file = "LICENSE" }
 "wurman_points.icons" = ["wurman_dots_logo.svg"]
 
 [tool.qgspb.forms]
-ui-files = ["src/wurman_points/ui/*.ui"]
+ui-files = ["src/wurman_dots/ui/*.ui"]
 compile = false
 
 [tool.qgspb.resources]
-qrc-files = ["src/wurman_points/resources.qrc"]
+qrc-files = ["src/wurman_dots/resources.qrc"]
 
 
 [project.optional-dependencies]

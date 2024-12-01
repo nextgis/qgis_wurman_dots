@@ -1,20 +1,20 @@
 from qgis.core import QgsProcessingProvider
 from qgis.PyQt.QtGui import QIcon
 
-from wurman_points.processing.wurman_points_algorithm import (
-    WurmanPointsAlgorithm,
+from wurman_dots.processing.wurman_dots_algorithm import (
+    WurmanDotsAlgorithm,
 )
 
 
-class WurmanPointsAlgorithmProvider(QgsProcessingProvider):
+class WurmanDotsAlgorithmProvider(QgsProcessingProvider):
     def loadAlgorithms(self):
-        self.addAlgorithm(WurmanPointsAlgorithm())
+        self.addAlgorithm(WurmanDotsAlgorithm())
 
     def id(self) -> str:
-        return "wurman_points"
+        return "wurman_dots"
 
     def name(self) -> str:
-        return self.tr("Wurman Points")
+        return self.tr("Wurman Dots")
 
     def icon(self) -> QIcon:
         return QIcon(":/plugins/wurman_points/icons/wurman_dots.png")

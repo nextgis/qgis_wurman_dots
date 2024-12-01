@@ -19,7 +19,7 @@ from qgis.core import (
 from qgis.PyQt.QtCore import QCoreApplication, QVariant
 
 
-class WurmanPointsAlgorithm(QgsProcessingAlgorithm):
+class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
     INPUT = "INPUT"
     GRID_SIZE = "GRID_SIZE"
     GRID_TYPE = "GRID_TYPE"
@@ -34,16 +34,16 @@ class WurmanPointsAlgorithm(QgsProcessingAlgorithm):
         return QCoreApplication.translate(context, string)
 
     def createInstance(self):
-        return WurmanPointsAlgorithm()
+        return WurmanDotsAlgorithm()
 
     def name(self):
-        return "create_wurman_points"
+        return "create_wurman_dots"
 
     def displayName(self):
-        return self.tr("Create Wurman Points")
+        return self.tr("Create Wurman Dots")
 
     def shortHelpString(self):
-        return self.tr("Create Wurman Points using Square or Hexagonal grid.")
+        return self.tr("Create Wurman Dots using Square or Hexagonal grid.")
 
     def initAlgorithm(self, configuration=None):
         self.addParameter(

@@ -1,5 +1,5 @@
-from wurman_points.wurman_points_plugin import WurmanPointsPlugin
+from wurman_dots.wurman_dots_plugin import WurmanDotsPlugin
 
 
 def classFactory(iface):
-    return WurmanPointsPlugin(iface)
+    return WurmanDotsPlugin(iface)
