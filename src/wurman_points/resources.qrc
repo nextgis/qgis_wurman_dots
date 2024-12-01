@@ -2,6 +2,6 @@
 <RCC version="1.0">
     <qresource prefix="/plugins/wurman_points">
         <file>icons/nextgis_logo.svg</file>
-        <file>icons/wurman_points.png</file>
+        <file>icons/NGWurmanDots.svg</file>
     </qresource>
 </RCC>
