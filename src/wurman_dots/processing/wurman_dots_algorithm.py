@@ -234,9 +234,7 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
             geom = feature.geometry()
             center = geom.centroid().asPoint()
 
-            radius = 500 + (grid_size * 0.5 - 500) * (
-                point_count / max_point_count
-            )
+            radius = (grid_size * 0.5) * (point_count / max_point_count)
             circle_geom = QgsGeometry.fromPointXY(center).buffer(radius, 32)
 
             var_circle = QgsFeature()
