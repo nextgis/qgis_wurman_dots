@@ -59,10 +59,10 @@
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="wurman_points:create_wurman_points_1">
+    <Option type="Map" name="wurman_dots:create_wurman_dots_1">
       <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="wurman_points:create_wurman_points" name="alg_id"/>
+      <Option type="QString" value="wurman_dots:create_wurman_dots" name="alg_id"/>
       <Option type="QString" value="" name="color"/>
       <Option type="Map" name="comment">
         <Option type="QString" value="" name="color"/>
@@ -74,16 +74,16 @@
         <Option type="bool" value="true" name="outputs_collapsed"/>
         <Option type="bool" value="true" name="parameters_collapsed"/>
       </Option>
-      <Option type="QString" value="Create Wurman Points" name="component_description"/>
+      <Option type="QString" value="Create Wurman Dots" name="component_description"/>
       <Option type="double" value="30" name="component_height"/>
       <Option type="double" value="700" name="component_pos_x"/>
       <Option type="double" value="555" name="component_pos_y"/>
       <Option type="double" value="200" name="component_width"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="wurman_points:create_wurman_points_1" name="id"/>
+      <Option type="QString" value="wurman_dots:create_wurman_dots_1" name="id"/>
       <Option type="Map" name="outputs">
         <Option type="Map" name="Fixed circles">
-          <Option type="QString" value="wurman_points:create_wurman_points_1" name="child_id"/>
+          <Option type="QString" value="wurman_dots:create_wurman_dots_1" name="child_id"/>
           <Option type="QString" value="" name="color"/>
           <Option type="Map" name="comment">
             <Option type="QString" value="" name="color"/>
@@ -108,7 +108,7 @@
           <Option type="bool" value="true" name="parameters_collapsed"/>
         </Option>
         <Option type="Map" name="Variable circles">
-          <Option type="QString" value="wurman_points:create_wurman_points_1" name="child_id"/>
+          <Option type="QString" value="wurman_dots:create_wurman_dots_1" name="child_id"/>
           <Option type="QString" value="" name="color"/>
           <Option type="Map" name="comment">
             <Option type="QString" value="" name="color"/>
@@ -215,9 +215,9 @@
       <Option type="int" value="0" name="flags"/>
       <Option type="QString" value="" name="help"/>
       <Option type="Map" name="metadata">
-        <Option type="QString" value="wurman_points:create_wurman_points_1" name="_modelChildId"/>
+        <Option type="QString" value="wurman_dots:create_wurman_dots_1" name="_modelChildId"/>
         <Option type="QString" value="Fixed circles" name="_modelChildOutputName"/>
-        <Option type="QString" value="wurman_points" name="_modelChildProvider"/>
+        <Option type="QString" value="wurman_dots" name="_modelChildProvider"/>
       </Option>
       <Option type="QString" value="fixed_circles" name="name"/>
       <Option type="QString" value="sink" name="parameter_type"/>
@@ -277,9 +277,9 @@
       <Option type="int" value="0" name="flags"/>
       <Option type="QString" value="" name="help"/>
       <Option type="Map" name="metadata">
-        <Option type="QString" value="wurman_points:create_wurman_points_1" name="_modelChildId"/>
+        <Option type="QString" value="wurman_dots:create_wurman_dots_1" name="_modelChildId"/>
         <Option type="QString" value="Variable circles" name="_modelChildOutputName"/>
-        <Option type="QString" value="wurman_points" name="_modelChildProvider"/>
+        <Option type="QString" value="wurman_dots" name="_modelChildProvider"/>
       </Option>
       <Option type="QString" value="variable_circles" name="name"/>
       <Option type="QString" value="sink" name="parameter_type"/>
