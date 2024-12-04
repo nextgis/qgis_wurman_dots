@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/plugins/wurman_dots">
+        <file>icons/nextgis_logo.svg</file>
+        <file>icons/wurman_dots_logo.svg</file>
+        <file>icons/wurman_dots.png</file>
+    </qresource>
+</RCC>
