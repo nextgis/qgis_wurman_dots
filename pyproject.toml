@@ -6,7 +6,7 @@ license = { file = "LICENSE" }
 
 
 [tool.qgspb.package-data]
-"wurman_points.icons" = ["wurman_dots_logo.svg"]
+"wurman_dots.icons" = ["wurman_dots_logo.svg"]
 
 [tool.qgspb.forms]
 ui-files = ["src/wurman_dots/ui/*.ui"]

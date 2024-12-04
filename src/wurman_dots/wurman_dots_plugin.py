@@ -31,7 +31,7 @@ class WurmanDotsPlugin:
         menu_name = self.tr("&Wurman Dots")
 
         self.__run_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svg"),
+            QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg"),
             self.tr("Create Wurman Dots"),
             iface.mainWindow(),
         )
@@ -49,12 +49,12 @@ class WurmanDotsPlugin:
             if action.text() != menu_name:
                 continue
             action.setIcon(
-                QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svg")
+                QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg")
             )
 
         self.__show_help_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_dots_logo.svg"),
-            "Wurman Points",
+            QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg"),
+            "Wurman Dots",
         )
         self.__show_help_action.triggered.connect(self.__open_about_dialog)
         plugin_help_menu = iface.pluginHelpMenu()
