@@ -1,3 +1,5 @@
+from enum import IntEnum
+
 import processing
 from qgis.core import (
     QgsFeature,
@@ -14,10 +16,14 @@ from qgis.core import (
     QgsProcessingParameterFeatureSource,
     QgsProcessingParameterNumber,
     QgsRectangle,
-    QgsVectorLayer,
     QgsWkbTypes,
 )
 from qgis.PyQt.QtCore import QCoreApplication, QVariant
+
+
+class GridType(IntEnum):
+    SQUARE = 2
+    HEXAGON = 4
 
 
 class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
@@ -86,10 +92,10 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
             )
         )
         self.addParameter(
-            QgsProcessingParameterBoolean
-            (self.CONTINUOUS_FIXED_CIRCLES,
-            self.tr('Create continuous grid of fixed circles'),
-            defaultValue=False,
+            QgsProcessingParameterBoolean(
+                self.CONTINUOUS_FIXED_CIRCLES,
+                self.tr("Create continuous grid of fixed circles"),
+                defaultValue=False,
             )
         )
 
@@ -102,7 +108,9 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
 
         grid_size = self.parameterAsDouble(parameters, self.GRID_SIZE, context)
         grid_type = self.parameterAsEnum(parameters, self.GRID_TYPE, context)
-        continuous_grid = self.parameterAsBool(parameters, self.CONTINUOUS_FIXED_CIRCLES, context)
+        continuous_grid = self.parameterAsBool(
+            parameters, self.CONTINUOUS_FIXED_CIRCLES, context
+        )
 
         fields = QgsFields()
         fields.append(QgsField("radius", QVariant.Double))
@@ -125,90 +133,27 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
             points_source.sourceCrs(),
         )
 
-        if self.GRID_TYPES[grid_type] == "Square":
-            grid_layer = self.create_square_grid(points_source, grid_size, continuous_grid)
-        else:
-            grid_layer = self.create_hex_grid(points_source, grid_size)
+        grid_type = (
+            GridType.SQUARE
+            if self.GRID_TYPES[grid_type] == "Square"
+            else GridType.HEXAGON
+        )
+        grid_layer = self.create_grid(grid_type, points_source, grid_size)
 
-        self.create_circles(grid_layer, sink_var, sink_fixed, grid_size, continuous_grid)
+        self.create_circles(
+            grid_layer, sink_var, sink_fixed, grid_size, continuous_grid
+        )
 
         return {
             self.OUTPUT_VAR_CIRCLES: var_id,
             self.OUTPUT_FIXED_CIRCLES: fixed_id,
         }
 
-    def create_square_grid(
-        self, points_source: QgsProcessingFeatureSource,
-        grid_size: float, continuous_grid: bool
-    ):
-        grid_layer = QgsVectorLayer(
-            f"Polygon?crs={points_source.sourceCrs().authid()}",
-            "grid",
-            "memory",
-        )
-        provider = grid_layer.dataProvider()
-        provider.addAttributes([QgsField("point_count", QVariant.Int)])
-        grid_layer.updateFields()
-        extent = points_source.sourceExtent()
-
-        min_x = extent.xMinimum()
-        min_y = extent.yMinimum()
-        max_x = extent.xMaximum()
-        max_y = extent.yMaximum()
-        grid_features = {}
-
-        if (continuous_grid):
-            for i in range(int((max_x - min_x) // grid_size) + 1):
-                for j in range(int((max_y - min_y) // grid_size) + 1):
-                    cell_x = int(min_x + grid_size * i)
-                    cell_y = int(min_y + grid_size * j)
-                    cell_geom = QgsGeometry.fromRect(
-                        QgsRectangle(
-                            cell_x, cell_y, cell_x + grid_size, cell_y + grid_size
-                        )
-                    )
-                    cell_id = f"{cell_x}_{cell_y}"
-
-                    if cell_id not in grid_features:
-                        grid_features[cell_id] = {
-                            "geometry": cell_geom,
-                            "point_count": 0,
-                        }
-
-            for point in points_source.getFeatures():
-                for cell_id in grid_features.keys():
-                    if (point.geometry().intersects(grid_features[cell_id]["geometry"])):
-                        grid_features[cell_id]["point_count"] += 1
-        else:
-            for point in points_source.getFeatures():  # type: ignore
-                x = point.geometry().asPoint().x()
-                y = point.geometry().asPoint().y()
-                cell_x = int((x - min_x) // grid_size) * grid_size + min_x
-                cell_y = int((y - min_y) // grid_size) * grid_size + min_y
-                cell_geom = QgsGeometry.fromRect(
-                    QgsRectangle(
-                        cell_x, cell_y, cell_x + grid_size, cell_y + grid_size
-                    )
-                )
-                cell_id = f"{cell_x}_{cell_y}"
-
-                if cell_id not in grid_features:
-                    grid_features[cell_id] = {
-                        "geometry": cell_geom,
-                        "point_count": 0,
-                    }
-                grid_features[cell_id]["point_count"] += 1
-
-        for feature_data in grid_features.values():
-            feature = QgsFeature()
-            feature.setGeometry(feature_data["geometry"])
-            feature.setAttributes([feature_data["point_count"]])
-            provider.addFeature(feature)
-
-        return grid_layer
-
-    def create_hex_grid(
-        self, points_source: QgsProcessingFeatureSource, grid_size: float
+    def create_grid(
+        self,
+        grid_type: GridType,
+        points_source: QgsProcessingFeatureSource,
+        grid_size: float,
     ):
         extent = points_source.sourceExtent()
         buffer_size = grid_size * 0.5
@@ -220,7 +165,7 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
         )
 
         params = {
-            "TYPE": 4,
+            "TYPE": int(grid_type),
             "EXTENT": f"{expanded_extent.xMinimum()},{expanded_extent.xMaximum()},{expanded_extent.yMinimum()},{expanded_extent.yMaximum()} [{points_source.sourceCrs().authid()}]",
             "HSPACING": grid_size,
             "VSPACING": grid_size,
@@ -248,7 +193,14 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
 
         return hex_grid
 
-    def create_circles(self, grid_layer, sink_var, sink_fixed, grid_size, continuous_grid: bool):
+    def create_circles(
+        self,
+        grid_layer,
+        sink_var,
+        sink_fixed,
+        grid_size,
+        continuous_grid: bool,
+    ):
         features = list(grid_layer.getFeatures())
         if not features:
             return
@@ -264,14 +216,18 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
 
         for feature in features:
             point_count = feature["point_count"]
-            if (point_count is None or point_count == 0) and not continuous_grid:
+            if (
+                point_count is None or point_count == 0
+            ) and not continuous_grid:
                 continue
 
             geom = feature.geometry()
             center = geom.centroid().asPoint()
-            if (point_count is not None and point_count != 0):
+            if point_count is not None and point_count != 0:
                 radius = (grid_size * 0.5) * (point_count / max_point_count)
-                circle_geom = QgsGeometry.fromPointXY(center).buffer(radius, 32)
+                circle_geom = QgsGeometry.fromPointXY(center).buffer(
+                    radius, 32
+                )
 
                 var_circle = QgsFeature()
                 var_circle.setGeometry(circle_geom)
