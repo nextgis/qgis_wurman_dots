@@ -1,2 +1,0 @@
-from .wurman_points_algorithm import WurmanPointsAlgorithm
-from .wurman_points_algorithm_provider import WurmanPointsAlgorithmProvider

@@ -1,15 +1,15 @@
 [general]
-name=Wurman Points
+name=Wurman Dots
 version=1.0.0
-icon=icons/wurman_points.png
+icon=icons/wurman_dots_logo.svg
 category=Vector
 
 author=NextGIS
 email=info@nextgis.com
 
-description=Create Wurman Points using a square or hexagonal grid.
+description=Create Wurman Dots using a square or hexagonal grid.
 description[ru]=Создавайте точки Вурмана по квадратной или гексагональной сетке.
-about=Wurman Points is a method for visualizing the density of a point layer. The input requires a point layer (EPSG:3857 only), along with specifying the grid cell size and selecting the grid type (square or hexagonal).
+about=Wurman Dots is a method for visualizing the density of a point layer. The input requires a point layer (EPSG:3857 only), along with specifying the grid cell size and selecting the grid type (square or hexagonal).
 about[ru]=Точки Вурмана – один из способов отображения плотности точечного слоя. На вход подаётся точечный слой (только EPSG:3857), указывается размер ячейки сетки, выбирается тип сетки (квадратная или гексагональная).
 
 qgisMinimumVersion=3.22
@@ -18,4 +18,4 @@ hasProcessingProvider=yes
 
 changelog=
     1.0.0:
-        * Plugin Wurman Points has been officially released
+        * Plugin Wurman Dots has been officially released

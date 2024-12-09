@@ -7,32 +7,32 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 from qgis.utils import iface
 
-import wurman_points.resources  # noqa: F401
-from wurman_points.about_dialog import AboutDialog
-from wurman_points.processing import WurmanPointsAlgorithmProvider
+import wurman_dots.resources  # noqa: F401
+from wurman_dots.about_dialog import AboutDialog
+from wurman_dots.processing import WurmanDotsAlgorithmProvider
 
 if TYPE_CHECKING:
     assert isinstance(iface, QgisInterface)
 
 
-class WurmanPointsPlugin:
+class WurmanDotsPlugin:
     def __init__(self, _: QgisInterface):
         self.__provider = None
         self.__run_action = None
         self.__about_action = None
 
     def initProcessing(self):
-        self.__provider = WurmanPointsAlgorithmProvider()
+        self.__provider = WurmanDotsAlgorithmProvider()
         QgsApplication.processingRegistry().addProvider(self.__provider)
 
     def initGui(self):
         self.initProcessing()
 
-        menu_name = self.tr("&Wurman Points")
+        menu_name = self.tr("&Wurman Dots")
 
         self.__run_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_points.png"),
-            self.tr("Create Wurman Points"),
+            QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg"),
+            self.tr("Create Wurman Dots"),
             iface.mainWindow(),
         )
         self.__run_action.triggered.connect(self.__exec_algorithm)
@@ -49,12 +49,12 @@ class WurmanPointsPlugin:
             if action.text() != menu_name:
                 continue
             action.setIcon(
-                QIcon(":/plugins/wurman_points/icons/wurman_points.png")
+                QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg")
             )
 
         self.__show_help_action = QAction(
-            QIcon(":/plugins/wurman_points/icons/wurman_points.png"),
-            "Wurman Points",
+            QIcon(":/plugins/wurman_dots/icons/wurman_dots_logo.svg"),
+            "Wurman Dots",
         )
         self.__show_help_action.triggered.connect(self.__open_about_dialog)
         plugin_help_menu = iface.pluginHelpMenu()
@@ -63,10 +63,10 @@ class WurmanPointsPlugin:
 
     def unload(self):
         iface.removePluginVectorMenu(
-            self.tr("&Wurman Points"), self.__run_action
+            self.tr("&Wurman Dots"), self.__run_action
         )
         iface.removePluginVectorMenu(
-            self.tr("&Wurman Points"), self.__about_action
+            self.tr("&Wurman Dots"), self.__about_action
         )
         QgsApplication.processingRegistry().removeProvider(self.__provider)
 
@@ -76,8 +76,8 @@ class WurmanPointsPlugin:
         return QgsApplication.translate(context, string)
 
     def __exec_algorithm(self):
-        execAlgorithmDialog("wurman_points:create_wurman_points")
+        execAlgorithmDialog("wurman_dots:create_wurman_dots")
 
     def __open_about_dialog(self) -> None:
-        dialog = AboutDialog("wurman_points")
+        dialog = AboutDialog("wurman_dots")
         dialog.exec()
