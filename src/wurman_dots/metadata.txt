@@ -7,6 +7,10 @@ category=Vector
 author=NextGIS
 email=info@nextgis.com
 
+homepage=https://github.com/nextgis/qgis_wurman_dots
+tracker=https://github.com/nextgis/qgis_wurman_dots/issues
+repository=https://github.com/nextgis/qgis_wurman_dots
+
 description=Create Wurman Dots using a square or hexagonal grid.
 description[ru]=Создавайте точки Вурмана по квадратной или гексагональной сетке.
 about=Wurman Dots is a method for visualizing the density of a point layer. The input requires a point layer (EPSG:3857 only), along with specifying the grid cell size and selecting the grid type (square or hexagonal).
