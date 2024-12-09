@@ -1,4 +1,5 @@
 from enum import IntEnum
+from typing import Any, Dict, Optional
 
 import processing
 from qgis.core import (
@@ -8,8 +9,10 @@ from qgis.core import (
     QgsGeometry,
     QgsProcessing,
     QgsProcessingAlgorithm,
+    QgsProcessingContext,
     QgsProcessingException,
     QgsProcessingFeatureSource,
+    QgsProcessingFeedback,
     QgsProcessingParameterBoolean,
     QgsProcessingParameterEnum,
     QgsProcessingParameterFeatureSink,
@@ -41,19 +44,19 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
             context = self.__class__.__name__
         return QCoreApplication.translate(context, string)
 
-    def createInstance(self):
+    def createInstance(self) -> Optional[QgsProcessingAlgorithm]:
         return WurmanDotsAlgorithm()
 
-    def name(self):
+    def name(self) -> str:
         return "create_wurman_dots"
 
-    def displayName(self):
+    def displayName(self) -> str:
         return self.tr("Create Wurman Dots")
 
-    def shortHelpString(self):
+    def shortHelpString(self) -> str:
         return self.tr("Create Wurman Dots using Square or Hexagonal grid.")
 
-    def initAlgorithm(self, configuration=None):
+    def initAlgorithm(self, configuration: Dict[str, Any] = {}) -> None:  # noqa: B006
         self.addParameter(
             QgsProcessingParameterFeatureSource(
                 self.INPUT,
@@ -99,7 +102,12 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
             )
         )
 
-    def processAlgorithm(self, parameters, context, feedback):
+    def processAlgorithm(
+        self,
+        parameters: Dict[str, Any],
+        context: QgsProcessingContext,
+        feedback: Optional[QgsProcessingFeedback],
+    ) -> Dict[str, Any]:
         points_source = self.parameterAsSource(parameters, self.INPUT, context)
         if points_source is None:
             raise QgsProcessingException(
