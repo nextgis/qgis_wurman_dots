@@ -1,8 +1,8 @@
 from typing import TYPE_CHECKING
 
+from processing import execAlgorithmDialog
 from qgis.core import QgsApplication
 from qgis.gui import QgisInterface
-from qgis.processing import execAlgorithmDialog
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 from qgis.utils import iface
