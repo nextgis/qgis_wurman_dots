@@ -1,14 +1,18 @@
 from qgis.core import QgsProcessingProvider
 from qgis.PyQt.QtGui import QIcon
 
-from wurman_dots.processing.wurman_dots_algorithm import (
-    WurmanDotsAlgorithm,
+from wurman_dots.processing.algorithm_for_cell_count import (
+    AlgorithmForCellCount,
+)
+from wurman_dots.processing.algorithm_for_cell_size import (
+    AlgorithmForCellSize,
 )
 
 
 class WurmanDotsAlgorithmProvider(QgsProcessingProvider):
     def loadAlgorithms(self):
-        self.addAlgorithm(WurmanDotsAlgorithm())
+        self.addAlgorithm(AlgorithmForCellCount())
+        self.addAlgorithm(AlgorithmForCellSize())
 
     def id(self) -> str:
         return "wurman_dots"
