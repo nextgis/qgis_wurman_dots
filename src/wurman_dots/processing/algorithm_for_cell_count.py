@@ -65,7 +65,7 @@ class AlgorithmForCellCount(WurmanDotsAlgorithm):
             QgsProcessingParameterEnum(
                 self.GRID_TYPE,
                 self.tr("Grid Type"),
-                options=self.GRID_TYPES,
+                options=[self.tr("Square"), self.tr("Hexagonal")],
                 defaultValue=0,
             )
         )
