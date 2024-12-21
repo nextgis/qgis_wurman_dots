@@ -13,6 +13,7 @@ from qgis.core import (
     QgsProcessingParameterFeatureSink,
     QgsProcessingParameterFeatureSource,
     QgsProcessingParameterNumber,
+    QgsRectangle,
     QgsWkbTypes,
 )
 from qgis.PyQt.QtCore import QCoreApplication, QVariant
@@ -130,12 +131,23 @@ class AlgorithmForCellSize(WurmanDotsAlgorithm):
             points_source.sourceCrs(),
         )
 
+        extent = points_source.sourceExtent()
+        buffer_size = grid_size * 0.5
+        expanded_extent = QgsRectangle(
+            extent.xMinimum() - buffer_size,
+            extent.yMinimum() - buffer_size,
+            extent.xMaximum() + buffer_size,
+            extent.yMaximum() + buffer_size,
+        )
+
         grid_type = (
             GridType.SQUARE
             if self.GRID_TYPES[grid_type] == "Square"
             else GridType.HEXAGON
         )
-        grid_layer = self.create_grid(grid_type, points_source, grid_size)
+        grid_layer = self.create_grid(
+            grid_type, points_source, grid_size, expanded_extent
+        )
 
         self.create_circles(
             grid_layer, sink_var, sink_fixed, grid_size, continuous_grid
