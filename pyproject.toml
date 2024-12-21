@@ -15,6 +15,10 @@ compile = false
 [tool.qgspb.resources]
 qrc-files = ["src/wurman_dots/resources.qrc"]
 
+[tool.qgspb.translations]
+ts-files = ["src/wurman_dots/i18n/*.ts"]
+no-obsolete = true
+
 
 [project.optional-dependencies]
 dev = ["ruff", "pre-commit"]

@@ -2,413 +2,413 @@
 <Option type="Map">
   <Option name="children" type="Map">
     <Option name="native:randompointsinextent_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:randompointsinextent" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="native:randompointsinextent" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="755" name="component_pos_x" type="double"/>
-        <Option value="365" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="755" type="double"/>
+        <Option name="component_pos_y" value="365" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Random points in extent" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="550" name="component_pos_x" type="double"/>
-      <Option value="405" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="Random points in extent" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="550" type="double"/>
+      <Option name="component_pos_y" value="405" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:randompointsinextent_1" name="id" type="QString"/>
+      <Option name="id" value="native:randompointsinextent_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="false" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="false" type="bool"/>
       <Option name="params" type="Map">
         <Option name="EXTENT" type="List">
           <Option type="Map">
-            <Option value="extent" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="extent" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
         <Option name="MAX_ATTEMPTS" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="200" name="static_value" type="int"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="200" type="int"/>
           </Option>
         </Option>
         <Option name="MIN_DISTANCE" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1" name="static_value" type="double"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="double"/>
           </Option>
         </Option>
         <Option name="POINTS_NUMBER" type="List">
           <Option type="Map">
-            <Option value="number_of_points" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="number_of_points" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
         <Option name="TARGET_CRS" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="ProjectCrs" name="static_value" type="QString"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="ProjectCrs" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="wurman_dots:create_wurman_dots_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option name="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="wurman_dots:create_wurman_dots" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="wurman_dots:create_wurman_dots_based_on_cell_count" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="750" name="component_pos_x" type="double"/>
-        <Option value="508" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1120" type="double"/>
+        <Option name="component_pos_y" value="610" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Create Wurman Dots" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="700" name="component_pos_x" type="double"/>
-      <Option value="555" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="Create Wurman Dots (grid based on cell count)" type="QString"/>
+      <Option name="component_height" value="44" type="double"/>
+      <Option name="component_pos_x" value="716" type="double"/>
+      <Option name="component_pos_y" value="528" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="wurman_dots:create_wurman_dots_1" name="id" type="QString"/>
+      <Option name="id" value="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="QString"/>
       <Option name="outputs" type="Map">
-        <Option name="Fixed circles" type="Map">
-          <Option value="wurman_dots:create_wurman_dots_1" name="child_id" type="QString"/>
-          <Option value="" name="color" type="QString"/>
+        <Option name="Fixed Circles" type="Map">
+          <Option name="child_id" value="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
           <Option name="comment" type="Map">
-            <Option value="" name="color" type="QString"/>
-            <Option value="" name="component_description" type="QString"/>
-            <Option value="60" name="component_height" type="double"/>
-            <Option value="0" name="component_pos_x" type="double"/>
-            <Option value="0" name="component_pos_y" type="double"/>
-            <Option value="100" name="component_width" type="double"/>
-            <Option value="true" name="outputs_collapsed" type="bool"/>
-            <Option value="true" name="parameters_collapsed" type="bool"/>
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
           </Option>
-          <Option value="Fixed circles" name="component_description" type="QString"/>
-          <Option value="30" name="component_height" type="double"/>
-          <Option value="940" name="component_pos_x" type="double"/>
-          <Option value="705" name="component_pos_y" type="double"/>
-          <Option value="200" name="component_width" type="double"/>
+          <Option name="component_description" value="Fixed Circles" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="0" type="double"/>
+          <Option name="component_pos_y" value="0" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Fixed circles" name="name" type="QString"/>
-          <Option value="OUTPUT_FIXED_CIRCLES" name="output_name" type="QString"/>
-          <Option value="true" name="outputs_collapsed" type="bool"/>
-          <Option value="true" name="parameters_collapsed" type="bool"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Fixed Circles" type="QString"/>
+          <Option name="output_name" value="OUTPUT_FIXED_CIRCLES" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
         </Option>
-        <Option name="Variable circles" type="Map">
-          <Option value="wurman_dots:create_wurman_dots_1" name="child_id" type="QString"/>
-          <Option value="" name="color" type="QString"/>
+        <Option name="Variable Circles" type="Map">
+          <Option name="child_id" value="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
           <Option name="comment" type="Map">
-            <Option value="" name="color" type="QString"/>
-            <Option value="" name="component_description" type="QString"/>
-            <Option value="60" name="component_height" type="double"/>
-            <Option value="0" name="component_pos_x" type="double"/>
-            <Option value="0" name="component_pos_y" type="double"/>
-            <Option value="100" name="component_width" type="double"/>
-            <Option value="true" name="outputs_collapsed" type="bool"/>
-            <Option value="true" name="parameters_collapsed" type="bool"/>
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
           </Option>
-          <Option value="Variable circles" name="component_description" type="QString"/>
-          <Option value="30" name="component_height" type="double"/>
-          <Option value="940" name="component_pos_x" type="double"/>
-          <Option value="647" name="component_pos_y" type="double"/>
-          <Option value="200" name="component_width" type="double"/>
+          <Option name="component_description" value="Variable Circles" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="0" type="double"/>
+          <Option name="component_pos_y" value="0" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Variable circles" name="name" type="QString"/>
-          <Option value="OUTPUT_VAR_CIRCLES" name="output_name" type="QString"/>
-          <Option value="true" name="outputs_collapsed" type="bool"/>
-          <Option value="true" name="parameters_collapsed" type="bool"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Variable Circles" type="QString"/>
+          <Option name="output_name" value="OUTPUT_VAR_CIRCLES" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="CONTINUOUS_FIXED_CIRCLES" type="List">
           <Option type="Map">
-            <Option value="create_continuous_grid_of_fixed_circles" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
           </Option>
         </Option>
-        <Option name="GRID_SIZE" type="List">
+        <Option name="GRID_COUNT" type="List">
           <Option type="Map">
-            <Option value="min(&#xa;     @Random_points_in_extent_OUTPUT_maxx - @Random_points_in_extent_OUTPUT_minx,&#xa;     @Random_points_in_extent_OUTPUT_maxy - @Random_points_in_extent_OUTPUT_miny&#xa;) /  @grid_size " name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="10" type="int"/>
           </Option>
         </Option>
         <Option name="GRID_TYPE" type="List">
           <Option type="Map">
-            <Option value="grid_type" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:randompointsinextent_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option name="child_id" value="native:randompointsinextent_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option value="8396483.309500000,8413631.709500000,9142135.358999999,9152772.190400001 [EPSG:3857]" name="extent" type="QString"/>
+    <Option name="extent" value="8396483.309500000,8413631.709500000,9142135.358999999,9152772.190400001 [EPSG:3857]" type="QString"/>
     <Option name="fixed_circles" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option value="UTF-8" name="fileEncoding" type="QString"/>
+          <Option name="fileEncoding" value="UTF-8" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option value="true" name="active" type="bool"/>
-          <Option value="1" name="type" type="int"/>
-          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option value="0" name="grid_type" type="int"/>
-    <Option value="100" name="number_of_points" type="int"/>
+    <Option name="grid_type" value="0" type="int"/>
+    <Option name="number_of_points" value="100" type="int"/>
     <Option name="variable_circles" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option value="UTF-8" name="fileEncoding" type="QString"/>
+          <Option name="fileEncoding" value="UTF-8" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option value="true" name="active" type="bool"/>
-          <Option value="1" name="type" type="int"/>
-          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option value="Version2" name="internal_version" type="QString"/>
+  <Option name="internal_version" value="Version2" type="QString"/>
   <Option name="modelVariables"/>
-  <Option value="" name="model_group" type="QString"/>
-  <Option value="create_random_points" name="model_name" type="QString"/>
-  <Option value="" name="outputGroup" type="QString"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="create_random_points" type="QString"/>
+  <Option name="outputGroup" value="" type="QString"/>
   <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="create_continuous_grid_of_fixed_circles" type="Map">
-      <Option value="false" name="default" type="bool"/>
+      <Option name="default" value="false" type="bool"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Create continuous grid of fixed circles" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
+      <Option name="description" value="Create continuous grid of fixed circles" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
-      <Option value="create_continuous_grid_of_fixed_circles" name="name" type="QString"/>
-      <Option value="boolean" name="parameter_type" type="QString"/>
+      <Option name="name" value="create_continuous_grid_of_fixed_circles" type="QString"/>
+      <Option name="parameter_type" value="boolean" type="QString"/>
     </Option>
     <Option name="extent" type="Map">
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Extent" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
+      <Option name="description" value="Extent" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
-      <Option value="extent" name="name" type="QString"/>
-      <Option value="extent" name="parameter_type" type="QString"/>
+      <Option name="name" value="extent" type="QString"/>
+      <Option name="parameter_type" value="extent" type="QString"/>
     </Option>
     <Option name="fixed_circles" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="2" name="data_type" type="int"/>
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="2" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Fixed circles" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
+      <Option name="description" value="Fixed Circles" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata" type="Map">
-        <Option value="wurman_dots:create_wurman_dots_1" name="_modelChildId" type="QString"/>
-        <Option value="Fixed circles" name="_modelChildOutputName" type="QString"/>
-        <Option value="wurman_dots" name="_modelChildProvider" type="QString"/>
+        <Option name="_modelChildId" value="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="QString"/>
+        <Option name="_modelChildOutputName" value="Fixed Circles" type="QString"/>
+        <Option name="_modelChildProvider" value="wurman_dots" type="QString"/>
       </Option>
-      <Option value="fixed_circles" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="false" name="supports_append" type="bool"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+      <Option name="name" value="fixed_circles" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
     <Option name="grid_size" type="Map">
-      <Option value="0" name="data_type" type="int"/>
-      <Option value="10" name="default" type="double"/>
+      <Option name="data_type" value="0" type="int"/>
+      <Option name="default" value="10" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Grid size" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="1.7976931348623157e+308" name="max" type="double"/>
+      <Option name="description" value="Grid size" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="max" value="1.7976931348623157e+308" type="double"/>
       <Option name="metadata"/>
-      <Option value="0" name="min" type="double"/>
-      <Option value="grid_size" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="0" type="double"/>
+      <Option name="name" value="grid_size" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
     <Option name="grid_type" type="Map">
-      <Option value="false" name="allow_multiple" type="bool"/>
+      <Option name="allow_multiple" value="false" type="bool"/>
       <Option name="default" type="List">
         <Option value="0" type="int"/>
       </Option>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Grid Type" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
+      <Option name="description" value="Grid Type" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
-      <Option value="grid_type" name="name" type="QString"/>
+      <Option name="name" value="grid_type" type="QString"/>
       <Option name="options" type="StringList">
         <Option value="Square" type="QString"/>
         <Option value="Hexagonal" type="QString"/>
       </Option>
-      <Option value="enum" name="parameter_type" type="QString"/>
-      <Option value="false" name="uses_static_strings" type="bool"/>
+      <Option name="parameter_type" value="enum" type="QString"/>
+      <Option name="uses_static_strings" value="false" type="bool"/>
     </Option>
     <Option name="number_of_points" type="Map">
-      <Option value="0" name="data_type" type="int"/>
-      <Option value="500" name="default" type="double"/>
+      <Option name="data_type" value="0" type="int"/>
+      <Option name="default" value="500" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Number of points" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="1.7976931348623157e+308" name="max" type="double"/>
+      <Option name="description" value="Number of points" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="max" value="1.7976931348623157e+308" type="double"/>
       <Option name="metadata"/>
-      <Option value="0" name="min" type="double"/>
-      <Option value="number_of_points" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="0" type="double"/>
+      <Option name="name" value="number_of_points" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
     <Option name="variable_circles" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="2" name="data_type" type="int"/>
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="2" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Variable circles" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
+      <Option name="description" value="Variable Circles" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata" type="Map">
-        <Option value="wurman_dots:create_wurman_dots_1" name="_modelChildId" type="QString"/>
-        <Option value="Variable circles" name="_modelChildOutputName" type="QString"/>
-        <Option value="wurman_dots" name="_modelChildProvider" type="QString"/>
+        <Option name="_modelChildId" value="wurman_dots:create_wurman_dots_based_on_cell_count_1" type="QString"/>
+        <Option name="_modelChildOutputName" value="Variable Circles" type="QString"/>
+        <Option name="_modelChildProvider" value="wurman_dots" type="QString"/>
       </Option>
-      <Option value="variable_circles" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="false" name="supports_append" type="bool"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+      <Option name="name" value="variable_circles" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
   <Option name="parameters" type="Map">
     <Option name="create_continuous_grid_of_fixed_circles" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="700" name="component_pos_x" type="double"/>
-        <Option value="15" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="700" type="double"/>
+        <Option name="component_pos_y" value="15" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="create_continuous_grid_of_fixed_circles" name="component_description" type="QString"/>
-      <Option value="43" name="component_height" type="double"/>
-      <Option value="279" name="component_pos_x" type="double"/>
-      <Option value="559.5" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="create_continuous_grid_of_fixed_circles" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="create_continuous_grid_of_fixed_circles" type="QString"/>
+      <Option name="component_height" value="43" type="double"/>
+      <Option name="component_pos_x" value="279" type="double"/>
+      <Option name="component_pos_y" value="559.5" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="create_continuous_grid_of_fixed_circles" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="extent" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="587" name="component_pos_x" type="double"/>
-        <Option value="174" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="587" type="double"/>
+        <Option name="component_pos_y" value="174" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="extent" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="280" name="component_pos_x" type="double"/>
-      <Option value="345" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="extent" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="extent" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="280" type="double"/>
+      <Option name="component_pos_y" value="345" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="extent" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="grid_size" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="428.9" name="component_pos_x" type="double"/>
-        <Option value="466.35" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="428.9" type="double"/>
+        <Option name="component_pos_y" value="466.35" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="grid_size" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="280" name="component_pos_x" type="double"/>
-      <Option value="495" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="grid_size" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="grid_size" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="280" type="double"/>
+      <Option name="component_pos_y" value="495" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="grid_size" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="grid_type" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="700" name="component_pos_x" type="double"/>
-        <Option value="15" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="700" type="double"/>
+        <Option name="component_pos_y" value="15" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="grid_type" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="280" name="component_pos_x" type="double"/>
-      <Option value="435" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="grid_type" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="grid_type" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="280" type="double"/>
+      <Option name="component_pos_y" value="435" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="grid_type" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="number_of_points" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="839" name="component_pos_x" type="double"/>
-        <Option value="172" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="839" type="double"/>
+        <Option name="component_pos_y" value="172" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="number_of_points" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="280" name="component_pos_x" type="double"/>
-      <Option value="285" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="number_of_points" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="number_of_points" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="280" type="double"/>
+      <Option name="component_pos_y" value="285" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="number_of_points" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
   </Option>
 </Option>
