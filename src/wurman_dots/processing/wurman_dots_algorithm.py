@@ -33,16 +33,8 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
         grid_type: GridType,
         points_source: QgsProcessingFeatureSource,
         grid_size: float,
+        expanded_extent: QgsRectangle,
     ) -> QgsVectorLayer:
-        extent = points_source.sourceExtent()
-        buffer_size = grid_size * 0.5
-        expanded_extent = QgsRectangle(
-            extent.xMinimum() - buffer_size,
-            extent.yMinimum() - buffer_size,
-            extent.xMaximum() + buffer_size,
-            extent.yMaximum() + buffer_size,
-        )
-
         params = {
             "TYPE": int(grid_type),
             "EXTENT": f"{expanded_extent.xMinimum()},{expanded_extent.xMaximum()},{expanded_extent.yMinimum()},{expanded_extent.yMaximum()} [{points_source.sourceCrs().authid()}]",

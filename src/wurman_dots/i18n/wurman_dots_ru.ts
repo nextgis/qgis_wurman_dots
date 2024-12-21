@@ -151,7 +151,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../processing/algorithm_for_cell_count.py" line="64"/>
         <source>Square</source>
-        <translation>Прямоугольная</translation>
+        <translation>Квадратная</translation>
     </message>
     <message>
         <location filename="../processing/algorithm_for_cell_count.py" line="64"/>
@@ -204,7 +204,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../processing/algorithm_for_cell_size.py" line="64"/>
         <source>Square</source>
-        <translation>Прямоугольная</translation>
+        <translation>Квадратная</translation>
     </message>
     <message>
         <location filename="../processing/algorithm_for_cell_size.py" line="64"/>
