@@ -10,6 +10,8 @@ email=info@nextgis.com
 homepage=https://github.com/nextgis/qgis_wurman_dots
 tracker=https://github.com/nextgis/qgis_wurman_dots/issues
 repository=https://github.com/nextgis/qgis_wurman_dots
+video=https://youtu.be/5cwiV16rVGo
+video[ru]=https://youtu.be/pf8FV_oHMJM
 
 description=Create Wurman Dots using a square or hexagonal grid.
 description[ru]=Создавайте точки Вурмана по квадратной или гексагональной сетке.
