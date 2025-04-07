@@ -80,6 +80,7 @@ class WurmanDotsPlugin:
         iface.addPluginToVectorMenu(menu_name, self.__algorithm_for_cell_count)
 
         self.__about_action = QAction(
+            QgsApplication.getThemeIcon("mActionPropertiesWidget.svg"),
             self.tr("About plugin…"),
             iface.mainWindow(),
         )
