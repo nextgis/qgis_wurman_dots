@@ -21,6 +21,7 @@ about[ru]=Точки Вурмана – один из способов отоб�
 qgisMinimumVersion=3.22
 qgisMaximumVersion=3.99
 hasProcessingProvider=yes
+supportsQt6=True
 
 changelog=
     1.0.0:
