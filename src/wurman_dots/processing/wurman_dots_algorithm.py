@@ -50,6 +50,7 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
         field_id = hex_grid.fields().indexFromName("point_count")
 
         # spatial_index = QgsSpatialIndex(points_source.getFeatures())
+        hex_grid.startEditing()
         for hexagon in hex_grid.getFeatures():
             hex_geom = hexagon.geometry()
             if not hex_geom or hex_geom.isEmpty():
@@ -60,11 +61,9 @@ class WurmanDotsAlgorithm(QgsProcessingAlgorithm):
                 for point in points_source.getFeatures()  # type: ignore
                 if hex_geom.intersects(point.geometry())
             )
-            point_count_attribute = {field_id: point_count}
-            provider.changeAttributeValues(
-                {hexagon.id(): point_count_attribute}
-            )
-            hex_grid.updateFields()
+            hex_grid.changeAttributeValue(hexagon.id(), field_id, point_count)
+
+        hex_grid.commitChanges()
 
         return hex_grid
 
