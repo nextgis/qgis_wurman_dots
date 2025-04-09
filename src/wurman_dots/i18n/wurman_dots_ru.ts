@@ -156,7 +156,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../processing/algorithm_for_cell_count.py" line="57"/>
         <source>Number of cells along the shorter side of the extent</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество ячеек меньшей стороны охвата</translation>
     </message>
 </context>
 <context>
