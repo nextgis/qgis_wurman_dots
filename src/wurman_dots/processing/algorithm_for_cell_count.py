@@ -57,7 +57,9 @@ class AlgorithmForCellCount(WurmanDotsAlgorithm):
         self.addParameter(
             QgsProcessingParameterNumber(
                 self.GRID_COUNT,
-                self.tr("Grid Cell Count"),
+                self.tr(
+                    "Number of cells along the shorter side of the extent"
+                ),
                 defaultValue=10,
                 minValue=1,
             )
