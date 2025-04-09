@@ -4,52 +4,52 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../about_dialog.py" line="75"/>
+        <location filename="../about_dialog.py" line="86"/>
         <source> by NextGIS</source>
         <translation> от NextGIS</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="215"/>
+        <location filename="../about_dialog.py" line="225"/>
         <source>REPORT_END</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="220"/>
+        <location filename="../about_dialog.py" line="230"/>
         <source>Developers</source>
         <translation>Разработчики</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="221"/>
+        <location filename="../about_dialog.py" line="231"/>
         <source>Homepage</source>
         <translation>Домашняя страница</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="222"/>
+        <location filename="../about_dialog.py" line="232"/>
         <source>Please report bugs at</source>
         <translation>Пожалуйста, сообщайте об ошибках в</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="224"/>
+        <location filename="../about_dialog.py" line="234"/>
         <source>bugtracker</source>
         <translation>багтрекер</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="225"/>
+        <location filename="../about_dialog.py" line="235"/>
         <source>Video with an overview of the plugin</source>
         <translation>Видео с обзором плагина</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="226"/>
+        <location filename="../about_dialog.py" line="236"/>
         <source>Other helpful services by NextGIS</source>
         <translation>Другие полезные сервисы от NextGIS</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="227"/>
+        <location filename="../about_dialog.py" line="237"/>
         <source>Convenient up-to-date data extracts for any place in the world</source>
         <translation>Удобная выборка актуальных данных из любой точки мира</translation>
     </message>
     <message>
-        <location filename="../about_dialog.py" line="230"/>
+        <location filename="../about_dialog.py" line="240"/>
         <source>Fully featured Web GIS service</source>
         <translation>Полнофункциональный Веб ГИС-сервис</translation>
     </message>
@@ -109,105 +109,105 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>AlgorithmForCellCount</name>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="41"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="42"/>
         <source>Create Wurman Dots (grid based on cell count)</source>
         <translation>Создать Точки Вурмана (сетка на основе количества ячеек)</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="44"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="45"/>
         <source>Create Wurman Dots using Square or Hexagonal grid. The grid is calculated based on the cell count.</source>
         <translation>Создает Точки Вурмана с использованием квадратной или шестиугольной сетки. Сетка рассчитывается на основе количества ячеек.</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="49"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="50"/>
         <source>Input Point Layer</source>
         <translation>Исходный точечный слой</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="56"/>
-        <source>Grid Cell Count</source>
-        <translation>Количество ячеек</translation>
-    </message>
-    <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="67"/>
         <source>Grid Type</source>
         <translation>Тип сетки</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="72"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="75"/>
         <source>Fixed Circles</source>
         <translation>Фиксированные окружности</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="79"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="82"/>
         <source>Variable Circles</source>
         <translation>Переменные окружности</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="86"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="89"/>
         <source>Create continuous grid of fixed circles</source>
         <translation>Создать непрерывную сетку фиксированных окружностей</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="67"/>
         <source>Square</source>
         <translation>Квадратная</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_count.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_count.py" line="67"/>
         <source>Hexagonal</source>
         <translation>Гексагональная</translation>
+    </message>
+    <message>
+        <location filename="../processing/algorithm_for_cell_count.py" line="57"/>
+        <source>Number of cells along the shorter side of the extent</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AlgorithmForCellSize</name>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="41"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="42"/>
         <source>Create Wurman Dots (grid based on cell size)</source>
         <translation>Создать Точки Вурмана (сетка на основе размера ячейки)</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="44"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="45"/>
         <source>Create Wurman Dots using Square or Hexagonal grid. The grid is calculated based on the cell size.</source>
         <translation>Создает Точки Вурмана с использованием квадратной или шестиугольной сетки. Сетка рассчитывается на основе размера ячейки.</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="49"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="50"/>
         <source>Input Point Layer</source>
         <translation>Исходный точечный слой</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="56"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="57"/>
         <source>Grid Cell Size (meters)</source>
         <translation>Размер ячейки (метры)</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="65"/>
         <source>Grid Type</source>
         <translation>Тип сетки</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="72"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="73"/>
         <source>Fixed Circles</source>
         <translation>Фиксированные окружности</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="79"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="80"/>
         <source>Variable Circles</source>
         <translation>Переменные окружности</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="86"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="87"/>
         <source>Create continuous grid of fixed circles</source>
         <translation>Создать непрерывную сетку фиксированных окружностей</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="65"/>
         <source>Square</source>
         <translation>Квадратная</translation>
     </message>
     <message>
-        <location filename="../processing/algorithm_for_cell_size.py" line="64"/>
+        <location filename="../processing/algorithm_for_cell_size.py" line="65"/>
         <source>Hexagonal</source>
         <translation>Гексагональная</translation>
     </message>
@@ -223,7 +223,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WurmanDotsPlugin</name>
     <message>
-        <location filename="../wurman_dots_plugin.py" line="112"/>
+        <location filename="../wurman_dots_plugin.py" line="113"/>
         <source>&amp;Wurman Dots</source>
         <translation>&amp;Точки Вурмана</translation>
     </message>
