@@ -1,6 +1,6 @@
 [general]
 name=Wurman Dots
-version=1.0.0
+version=2.0.0
 icon=icons/wurman_dots_logo.svg
 category=Vector
 
@@ -25,8 +25,8 @@ supportsQt6=True
 
 changelog=
     2.0.0:
-        * Added support for Qt6
         * Added algorithm of creating Wurman dots with the grid based on cell count
+        * Added support for Qt6
         * Fixed creation of duplicated circle geometry
     1.0.0:
         * Plugin Wurman Dots has been officially released
